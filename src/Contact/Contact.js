@@ -92,25 +92,25 @@ const Contact = () => {
           <h3 className="contact__title">Talk to me</h3>
           <div className="contact__info">
             <div className="contact__card">
-              <i className="uil uil-facebook contact__card-icon"></i>
-              <h3 className="contact__card-title">Facebook</h3>
-              <span className="contact__card-data">facebookName</span>
-              <a href="" className="contact__button">
-                <i className="bx bx-right-arrow-alt contact__button-icon"></i>
-              </a>
-            </div>
-            <div className="contact__card">
-              <i className="uil uil-instagram contact__card-icon"></i>
-              <h3 className="contact__card-title">Instagram</h3>
-              <span className="contact__card-data">@igName</span>
-              <a href="" className="contact__button">
-                <i className="bx bx-right-arrow-alt contact__button-icon"></i>
-              </a>
-            </div>
-            <div className="contact__card">
               <i className="uil uil-linkedin contact__card-icon"></i>
               <h3 className="contact__card-title">Linkedin</h3>
               <span className="contact__card-data">linkedinName</span>
+              <a href="" className="contact__button">
+                <i className="bx bx-right-arrow-alt contact__button-icon"></i>
+              </a>
+            </div>
+            <div className="contact__card">
+              <i className="uil uil-fast-mail contact__card-icon"></i>
+              <h3 className="contact__card-title">Email</h3>
+              <span className="contact__card-data">abc@gmail.com</span>
+              <a href="" className="contact__button">
+                <i className="bx bx-right-arrow-alt contact__button-icon"></i>
+              </a>
+            </div>
+            <div className="contact__card">
+              <i className="uil uil-phone contact__card-icon"></i>
+              <h3 className="contact__card-title">Phone</h3>
+              <span className="contact__card-data">+1111111111</span>
               <a href="" className="contact__button">
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>

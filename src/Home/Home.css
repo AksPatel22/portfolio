@@ -75,6 +75,13 @@
   margin-bottom: var(--mb-1);
   padding-left: 5rem;
 }
+.prologue {
+  position: relative;
+  font-size: var(--h3-font-size);
+  /* padding-right: 5.4rem; */
+  font-weight: var(--font-normal);
+  margin-bottom: var(--mb-1);
+}
 .home__description {
   max-width: 400px;
   margin-bottom: var(--mb-3);

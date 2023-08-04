@@ -3,11 +3,12 @@ import "./Testimonials.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
+import { Data } from "./Data";
 
 const Testimonials = () => {
   return (
-    <section className="testimonail container section">
+    <section className="testimonail container section" id="testimonials">
       <h2 className="section__title">My clients say</h2>
       <span className="section__subtitle"></span>
       <Swiper
@@ -17,7 +18,11 @@ const Testimonials = () => {
         loop={true}
         grabCursor={true}
         pagination={{ clickable: true }}
-        autoplay={{ delay: 1000 }}
+        autoplay={{
+          delay: 3000,
+          pauseOnMouseEnter: true,
+          disableOnInteraction: false,
+        }}
         breakpoints={{
           576: {
             slidesPerView: 1,
@@ -27,9 +32,9 @@ const Testimonials = () => {
             spaceBetween: 48,
           },
         }}
-        modules={[Pagination]}
+        modules={[Pagination, Autoplay]}
       >
-        {/* {Data.map((val) => {
+        {Data.map((val) => {
           return (
             <SwiperSlide className="testimonial__card" key={val.id}>
               <img src={val.image} alt="" className="testimonial__img" />
@@ -37,7 +42,7 @@ const Testimonials = () => {
               <p className="testimonial__description">{val.description}</p>
             </SwiperSlide>
           );
-        })} */}
+        })}
       </Swiper>
     </section>
   );

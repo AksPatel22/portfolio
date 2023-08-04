@@ -52,6 +52,12 @@ const Backend = () => {
               <h3 className="skills__name">Communication and Collaboration</h3>
             </div>
           </div>
+          <div className="skills__data">
+            <i className="bx bx-badge-check"></i>
+            <div>
+              <h3 className="skills__name">Game Maker Studio</h3>
+            </div>
+          </div>
         </div>
       </div>
     </div>

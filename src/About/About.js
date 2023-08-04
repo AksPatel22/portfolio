@@ -7,23 +7,20 @@ const About = () => {
   return (
     <section className="about section" id="about">
       <h2 className="section__title">About Me</h2>
-      <span className="section__subtitle">My introduction</span>
       <div className="about__container container grid">
         <img src={aboutImg} className="about__img" alt="img" />
         <div className="about__data">
           <Info />
           <p className="about__description">
-            As a Senior Unity 3D Technologist (Game Developer) at Artoon
-            Solution Pvt. Ltd., I have over two years of experience delivering
-            client-centric solutions. My expertise includes multiplayer and real
-            money board games with seamless online gameplay using socket
-            programming. I am skilled in AI development for enhancing offline
-            modes and creating immersive 3D game environments. As a team leader,
-            I manage projects, collaborate with clients, and ensure timely
-            deliveries. My proficiency extends to testable and scalable
-            cross-platform development, problem-solving, agile methodologies,
-            version control, and project management. Committed to delivering
-            exceptional game development solutions.
+            I'm Dharmik Lodaliya, a passionate game developer with a recent
+            Game-Design Diploma from Cambrian College. As a Senior Unity 3D
+            Technologist, I specialize in creating visually stunning 3D games,
+            seamless multiplayer functionality, and sophisticated AI systems. I
+            embrace challenges, excel in C++, C#, and stay updated on AR/VR
+            trends to create cross-platform experiences. With strong leadership
+            and communication skills, I foster collaborative environments and
+            exceed client expectations. Let's embark on this exhilarating game
+            development journey together, inspiring players worldwide.
           </p>
           <a href="" className="button button--flex">
             Download CV

@@ -10,42 +10,36 @@ const Frontend = () => {
             <i className="bx bx-badge-check"></i>
             <div>
               <h3 className="skills__name">Testable and Scalable Code</h3>
-              {/* <span className="skills__level">level</span> */}
             </div>
           </div>
           <div className="skills__data">
             <i className="bx bx-badge-check"></i>
             <div>
               <h3 className="skills__name">Cross-Platform Development</h3>
-              {/* <span className="skills__level">level</span> */}
             </div>
           </div>
           <div className="skills__data">
             <i className="bx bx-badge-check"></i>
             <div>
               <h3 className="skills__name">Problem Solving and Bug Fixing</h3>
-              {/* <span className="skills__level">level</span> */}
             </div>
           </div>
           <div className="skills__data">
             <i className="bx bx-badge-check"></i>
             <div>
               <h3 className="skills__name">Agile Development</h3>
-              {/* <span className="skills__level">level</span> */}
             </div>
           </div>
           <div className="skills__data">
             <i className="bx bx-badge-check"></i>
             <div>
               <h3 className="skills__name">Version Control</h3>
-              {/* <span className="skills__level">level</span> */}
             </div>
           </div>
           <div className="skills__data">
             <i className="bx bx-badge-check"></i>
             <div>
               <h3 className="skills__name">Time Management</h3>
-              {/* <span className="skills__level">level</span> */}
             </div>
           </div>
           <div className="skills__data">
@@ -54,7 +48,6 @@ const Frontend = () => {
               <h3 className="skills__name">
                 Problem Solving and Analytical Thinking
               </h3>
-              {/* <span className="skills__level">level</span> */}
             </div>
           </div>
           <div className="skills__data">
@@ -63,7 +56,12 @@ const Frontend = () => {
               <h3 className="skills__name">
                 UI/UX & Gameplay Programming (C, C++,C#)
               </h3>
-              {/* <span className="skills__level">level</span> */}
+            </div>
+          </div>
+          <div className="skills__data">
+            <i className="bx bx-badge-check"></i>
+            <div>
+              <h3 className="skills__name">Object Oriented Programming</h3>
             </div>
           </div>
         </div>

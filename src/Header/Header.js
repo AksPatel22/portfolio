@@ -3,14 +3,6 @@ import "./Header.css";
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);
-  window.addEventListener("scroll", function () {
-    const header = this.document.querySelector("#theme-two-wrapper .header");
-    if (this.scrollY >= 80) {
-      header.classList.add("scroll-header");
-    } else {
-      header.classList.remove("scroll-header");
-    }
-  });
 
   return (
     <header className="header">
@@ -36,13 +28,19 @@ const Header = () => {
               </a>
             </li>
             <li className="nav__item">
-              <a href="#services" className="nav__link">
-                <i className="uil uil-briefcase-alt nav__icon"></i> Services
+              <a href="#qualification" className="nav__link">
+                <i className="uil uil-briefcase-alt nav__icon"></i>{" "}
+                Qualification
               </a>
             </li>
             <li className="nav__item">
               <a href="#portfolio" className="nav__link">
                 <i className="uil uil-scenery nav__icon"></i> Portfolio
+              </a>
+            </li>
+            <li className="nav__item">
+              <a href="#testimonials" className="nav__link">
+                <i className="uil uil-scenery nav__icon"></i> Testimonials
               </a>
             </li>
             <li className="nav__item">

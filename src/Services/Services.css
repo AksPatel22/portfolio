@@ -55,11 +55,17 @@
   visibility: hidden;
 }
 .services__modal-content {
-  width: 500px;
+  width: 70vw;
+  height: 80vh;
   position: relative;
   background-color: var(--container-color);
   padding: 4.5rem 2.5rem 2.5rem;
   border-radius: 1.5rem;
+  overflow-y: scroll;
+  overflow-x: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .services__modal-close {
   position: absolute;
@@ -115,6 +121,17 @@
   opacity: 1;
   visibility: visible;
 }
+
+.services__modal-slider {
+  width: 60%;
+  height: 60%;
+  background-color: rebeccapurple;
+}
+.swiper-image {
+  width: 100%;
+  height: 100%;
+}
+
 @media screen and (max-width: 992px) {
   .services__container {
     grid-template-columns: repeat(3, 218px);

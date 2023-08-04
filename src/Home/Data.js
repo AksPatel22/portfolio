@@ -56,7 +56,15 @@ const Data = () => {
         </svg>
       </h1>
       <h3 className="home__subtitle">Unity Game Developer</h3>
-      <p className="home__description">shortDescription</p>
+      <h3 className="prologue">
+        Unity3d, C#, C++, Game Maker Studio, Cocos2dx
+      </h3>
+      <p className="home__description">
+        I'm Dharmik Lodaliya, a dynamic game developer with expertise in Unity
+        3D, C++, C#, and game design. I create visually stunning 3D games,
+        implement seamless multiplayer, and advanced AI systems. Let's venture
+        into game development and inspire players worldwide!
+      </p>
       <a href="#contact" className="button button--flex">
         Say Hello
         <svg
