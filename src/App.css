@@ -199,8 +199,9 @@ img {
 
   .section {
     padding: 2rem 0 4rem;
+    margin: 10px;
   }
-
+  
   .section__subtitle {
     margin-bottom: var(--mb-3);
   }

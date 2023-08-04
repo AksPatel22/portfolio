@@ -1,6 +1,7 @@
 import React from "react";
 import "./Portfolio.css";
 import Work from "./Work";
+import {projectData} from './Data.js'
 
 const Portfolio = () => {
   return (
@@ -9,12 +10,10 @@ const Portfolio = () => {
       <span className="section__subtitle">Most recent works</span>
       {/* <Works /> */}
       <div className="work__container container grid">
-        <Work />
-        <Work />
-        <Work />
-        <Work />
-        <Work />
-        <Work />
+      {projectData.map((item)=>{
+          return <Work data={item}/>
+        })}
+        
       </div>
     </section>
   );

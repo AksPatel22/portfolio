@@ -5,7 +5,9 @@
 }
 
 .about__img {
-  width: 350px;
+  /* width: 350px; */
+  width: 455px;
+    height: 274px;
   border-radius: 1.5rem;
   justify-self: center;
 }
@@ -50,7 +52,7 @@
   }
 
   .about__img {
-    width: 220px;
+    width: 600px;
   }
 
   .about__box {
@@ -76,6 +78,9 @@
   }
   .about__description {
     padding: 0;
+  }
+  .about__img {
+    width: 400px;
   }
 }
 
