@@ -5,21 +5,19 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper/modules";
 
-const Work = ({data}) => {
+const Work = ({ data }) => {
   console.log(data);
   const [toggle, setToggle] = useState(0);
   const toggleTab = (index) => {
     setToggle(index);
   };
-  useEffect(()=>{
-if(toggle !== 0){
-  document.body.style.overflow = 'hidden'
-}
-else{
-  document.body.style.overflow = 'visible'
-
-}
-  },[toggle])
+  useEffect(() => {
+    if (toggle !== 0) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "visible";
+    }
+  }, [toggle]);
 
   return (
     <div className="work__card">
@@ -39,100 +37,91 @@ else{
           </span>
           <p className="services__modal-description">All the best</p>
           <div className="services__modal-slider">
-          <Swiper
-      style={{ width: '100%', height: '100%' }}
-      slidesPerView={1}
-      spaceBetween={24}
-      loop={true}
-      grabCursor={true}
-      pagination={{ clickable: true }}
-      autoplay={{
-        delay: 3000,
-        pauseOnMouseEnter: true,
-        disableOnInteraction: false,
-      }}
-      modules={[Pagination, Autoplay]}
-    >
-      <SwiperSlide>
-        <div className="swiper-image" style={{ backgroundColor: 'beige' }}></div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className="swiper-image" style={{ backgroundColor: 'blue' }}></div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className="swiper-image" style={{ backgroundColor: 'cadetblue' }}></div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className="swiper-image" style={{ backgroundColor: 'chartreuse' }}></div>
-      </SwiperSlide>
-    </Swiper>
-    </div>
-          <div className="li12">
-          <ul className="services__modal-services ">
-            <li className="services__modal-service">
-              <i className="uil uil-check-circle services__modal-icon"></i>
-              <p className="services__modal-info">Lorem Lorem LoremLoremLoremLoremLorem LoremLorem.</p>
-            </li>
-            <li className="services__modal-service">
-              <i className="uil uil-check-circle services__modal-icon"></i>
-              <p className="services__modal-info">Lorem Lorem LoremLoremLoremLoremLorem LoremLorem.</p>
-            </li>
-            <li className="services__modal-service">
-              <i className="uil uil-check-circle services__modal-icon"></i>
-              <p className="services__modal-info">Lorem Lorem LoremLoremLoremLoremLorem LoremLorem.</p>
-            </li>
-            <li className="services__modal-service">
-              <i className="uil uil-check-circle services__modal-icon"></i>
-              <p className="services__modal-info">Lorem Lorem LoremLoremLoremLoremLorem LoremLorem.</p>
-            </li>
-            <li className="services__modal-service">
-              <i className="uil uil-check-circle services__modal-icon"></i>
-              <p className="services__modal-info">Lorem Lorem LoremLoremLoremLoremLorem LoremLorem.</p>
-            </li>
-            <li className="services__modal-service">
-              <i className="uil uil-check-circle services__modal-icon"></i>
-              <p className="services__modal-info">Lorem Lorem LoremLoremLoremLoremLorem LoremLorem.</p>
-            </li>
-            <li className="services__modal-service">
-              <i className="uil uil-check-circle services__modal-icon"></i>
-              <p className="services__modal-info">Lorem Lorem LoremLoremLoremLoremLorem LoremLorem.</p>
-            </li>
-            <li className="services__modal-service">
-              <i className="uil uil-check-circle services__modal-icon"></i>
-              <p className="services__modal-info">Lorem Lorem LoremLoremLoremLoremLorem LoremLorem.</p>
-            </li><li className="services__modal-service">
-              <i className="uil uil-check-circle services__modal-icon"></i>
-              <p className="services__modal-info">Lorem Lorem LoremLoremLoremLoremLorem LoremLorem.</p>
-            </li><li className="services__modal-service">
-              <i className="uil uil-check-circle services__modal-icon"></i>
-              <p className="services__modal-info">Lorem Lorem LoremLoremLoremLoremLorem LoremLorem.</p>
-            </li><li className="services__modal-service">
-              <i className="uil uil-check-circle services__modal-icon"></i>
-              <p className="services__modal-info">Lorem Lorem LoremLoremLoremLoremLorem LoremLorem.</p>
-            </li><li className="services__modal-service">
-              <i className="uil uil-check-circle services__modal-icon"></i>
-              <p className="services__modal-info">Lorem Lorem LoremLoremLoremLoremLorem LoremLorem.</p>
-            </li><li className="services__modal-service">
-              <i className="uil uil-check-circle services__modal-icon"></i>
-              <p className="services__modal-info">Lorem Lorem LoremLoremLoremLoremLorem LoremLorem.</p>
-            </li><li className="services__modal-service">
-              <i className="uil uil-check-circle services__modal-icon"></i>
-              <p className="services__modal-info">Lorem Lorem LoremLoremLoremLoremLorem LoremLorem.</p>
-            </li><li className="services__modal-service">
-              <i className="uil uil-check-circle services__modal-icon"></i>
-              <p className="services__modal-info">Lorem Lorem LoremLoremLoremLoremLorem LoremLorem.</p>
-            </li><li className="services__modal-service">
-              <i className="uil uil-check-circle services__modal-icon"></i>
-              <p className="services__modal-info">Lorem Lorem LoremLoremLoremLoremLorem LoremLorem.</p>
-            </li><li className="services__modal-service">
-              <i className="uil uil-check-circle services__modal-icon"></i>
-              <p className="services__modal-info">Lorem Lorem LoremLoremLoremLoremLorem LoremLorem.</p>
-            </li>
-          </ul>
+            <Swiper
+              style={{ width: "100%", height: "100%" }}
+              slidesPerView={1}
+              spaceBetween={24}
+              loop={true}
+              grabCursor={true}
+              pagination={{ clickable: true }}
+              autoplay={{
+                delay: 3000,
+                pauseOnMouseEnter: true,
+                disableOnInteraction: false,
+              }}
+              modules={[Pagination, Autoplay]}
+            >
+              <SwiperSlide>
+                <div
+                  className="swiper-image"
+                  style={{ backgroundColor: "beige" }}
+                ></div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div
+                  className="swiper-image"
+                  style={{ backgroundColor: "blue" }}
+                ></div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div
+                  className="swiper-image"
+                  style={{ backgroundColor: "cadetblue" }}
+                ></div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div
+                  className="swiper-image"
+                  style={{ backgroundColor: "chartreuse" }}
+                ></div>
+              </SwiperSlide>
+            </Swiper>
           </div>
-          
-      </div> 
-      </div>          
+          <div className="li12">
+            {data?.brief?.map((item) => {
+              return <p className="paragra">{item}</p>;
+            })}
+            <p className="role1">{data.role}</p>
+            <p>{data.desc}</p>
+            <ul className="services__modal-services ">
+              <p className="mtitle">Key Technical Contributions</p>
+              {data?.contributions?.map((item) => {
+                return (
+                  <li className="services__modal-service">
+                    <i className="uil uil-check-circle services__modal-icon"></i>
+                    <p className="services__modal-info"></p>
+                    <div className="divu">
+                      <p className="title12">{item.title1}</p>
+                      <p className="desc12">{item.desc1}</p>
+                    </div>
+                  </li>
+                );
+              })}
+              {data?.contributions2?.map((item) => {
+                return (
+                  <>
+                    <p>
+                      <b>{item.title}</b>
+                    </p>
+                    {item?.info?.map((item) => {
+                      return (
+                        <li className="services__modal-service">
+                          <i className="uil uil-check-circle services__modal-icon"></i>
+                          <p className="services__modal-info"></p>
+                          <div className="divu">
+                            <p className="title12">{item.title1}</p>
+                            <p className="desc12">{item.desc1}</p>
+                          </div>
+                        </li>
+                      );
+                    })}
+                  </>
+                );
+              })}
+            </ul>
+          </div>
+        </div>
+      </div>
       <img src={projectImg} alt="img" className="work__img" />
       <h3 className="work__title">{data.title}</h3>
       <p>desc</p>
